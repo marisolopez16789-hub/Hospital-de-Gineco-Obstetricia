@@ -1,0 +1,83 @@
+body {
+  background-color: #f2f1ec;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.navegacion {
+  background-color: #bcd4d4;
+}
+
+.navegacion a {
+  color: black;
+}
+
+.hospital {
+  max-width: 100px;
+}
+
+/* Articulo 1 */
+.btn-card {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Articulo 2 */
+/* Ítems en píldora */
+.pill {
+  background-color: #e1f8f8;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  padding: clamp(0.75rem, 1vw + 0.5rem, 1.25rem) clamp(1rem, 2vw + 0.5rem, 2rem);
+}
+
+.icon-check {
+  width: clamp(2.25rem, 3.2vw + 1rem, 3rem);
+  height: clamp(2.25rem, 3.2vw + 1rem, 3rem);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 3px solid white;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.2vw + 0.6rem, 1.4rem);
+  flex: 0 0 auto;
+  color: white;
+}
+
+/* Articulo 3 */
+.note-dashed {
+  border: 4px dashed var(--bs-danger);
+  border-radius: 1.5rem;
+  padding: clamp(1rem, 2vw + 0.5rem, 1.75rem);
+}
+/* Íconos grandes y fluidos */
+.icon-lg {
+  width: clamp(72px, 10vw, 130px);
+  height: auto;
+}
+
+/* Articulo 4 */
+.imagenes {
+  width: 100px;
+}
+
+/* espacios */
+.espacios {
+  background-color: #bcd4d4;
+  height: 20px;
+}
+
+
+/* Ajustes finos en móvil */
+@media (max-width: 991.98px) {
+  header .hospital { height: 48px; width: auto; }
+  #mobileBar { gap: 12px; } /* espacio entre logo y botón */
+}
